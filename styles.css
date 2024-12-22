@@ -1,0 +1,189 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F9FB; /* Soft off-white */
+    color: #34495E; /* Muted navy */
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #74B9FF, #A29BFE); /* Light blue and lavender */
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Navigation Bar */
+nav {
+    background: #2C3E50; /* Dark navy */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #EAF2F8; /* Very light blue */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #34495E; /* Muted navy */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #0984E3; /* Vibrant blue */
+    border-bottom: 3px solid #A29BFE; /* Lavender */
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Skills Section with Icons */
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+#skills li {
+    background: #EAF2F8; /* Soft blue-gray */
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section with Cards */
+.project {
+    background: #F8F9FA; /* Soft white */
+    border-left: 5px solid #74B9FF; /* Light blue */
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section with Icons */
+#contact p a {
+    color: #0984E3; /* Vibrant blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact p a:hover {
+    color: #6C5CE7; /* Lavender */
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2C3E50; /* Dark navy */
+    color: #EAF2F8; /* Light blue */
+    font-size: 0.9rem;
+}
+
+/* Add Button Styles */
+button {
+    background: linear-gradient(135deg, #74B9FF, #6C5CE7); /* Light blue to lavender */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6C5CE7, #0984E3); /* Lavender to vibrant blue */
+    transform: scale(1.05);
+}
+
+/* Add Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
